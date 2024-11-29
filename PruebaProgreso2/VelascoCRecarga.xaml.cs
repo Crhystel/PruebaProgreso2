@@ -9,7 +9,7 @@ public partial class VelascoCRecarga : ContentPage
     public Recarga recarga;
     IRecarga _recargaRepository;
     public List<Recarga> recargaList;
-    //public string _fileName = Path.Combine(FileSystem.AppDataDirectory, "CrhystelVelasco.txt");
+    public string _fileName = Path.Combine(FileSystem.AppDataDirectory, "CrhystelVelasco.txt");
     public VelascoCRecarga()
 	{
 		InitializeComponent();
@@ -20,7 +20,7 @@ public partial class VelascoCRecarga : ContentPage
 	}
 
   
-    private void Buton1_Clicked(object sender, EventArgs e)
+    private async void Buton1_Clicked(object sender, EventArgs e)
     {
         var nuevaRecarga = new Recarga
         {
@@ -32,12 +32,15 @@ public partial class VelascoCRecarga : ContentPage
         if (_recargaRepository.CrearRecarga(nuevaRecarga))
         {
             crhysvelasco_label3.Text = "Recarga guardada con éxito.";
-            CargarRecargas();
+            CargarRecargas();   
+            await DisplayAlert("Alert", "Recarga guardada con éxito.\"", "OK");
         }
         else
         {
+            await DisplayAlert("Alert", "Error al guardar la recarga.\"", "OK");
             crhysvelasco_label3.Text = "Error al guardar la recarga.";
         }
+        
 
 
     }
