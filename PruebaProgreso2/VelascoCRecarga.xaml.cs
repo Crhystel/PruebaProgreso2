@@ -13,10 +13,10 @@ public partial class VelascoCRecarga : ContentPage
         BindingContext= recarga;
 	}
 
+  
     private void Buton1_Clicked(object sender, EventArgs e)
     {
-        recarga.NumeroTelefono = crhysvelasco_entr1.Text;
-
+        
     }
 
     private void Buton2_Clicked(object sender, EventArgs e)

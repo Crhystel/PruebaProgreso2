@@ -23,14 +23,12 @@
                VerticalOptions="Center" />
         <Label Grid.Row="1" Grid.Column="0"
                Text="Velasco"
-               TextColor="DarkGreen"
-               FontSize="50"
+               Style="{StaticResource ApellidosStyle}"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
         <Label Grid.Row="1" Grid.Column="1"
                Text="Sarango"
-               TextColor="BlueViolet"
-               FontSize="20"
+               Style="{StaticResource ApellidosStyle}"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
     </Grid>

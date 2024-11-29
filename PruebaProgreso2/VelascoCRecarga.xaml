@@ -12,7 +12,8 @@
             HorizontalOptions="Center" />
         <Entry
             x:Name="crysvelasco_entry1"
-            Placeholder="Numero de telefono"/>
+            Placeholder="Numero de telefono"
+            Text="{Binding Telefono}"/>
         <Label 
             x:Name="crhysvelasco_label2"
             Text="Ingrese su nombre para la recarga:"
@@ -20,7 +21,12 @@
             HorizontalOptions="Center"/>
         <Entry
             x:Name="crysvelasco_entry2"
-            Placeholder="Ingrese su nombre"/>
+            Placeholder="Ingrese su nombre"
+            Text="{Binding Nombre}"/>
+        <Label
+            x:Name="crhysvelasco_label3"
+            Text="{Binding Mensaje}"
+            />
         <Button
             x:Name="Buton1"
             Text="Recargar"
