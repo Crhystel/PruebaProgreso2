@@ -1,16 +1,22 @@
+using PruebaProgreso2.Interfaces;
 using PruebaProgreso2.Models;
+using PruebaProgreso2.Repositories;
 
 namespace PruebaProgreso2;
 
 public partial class VelascoCRecarga : ContentPage
 {
     public Recarga recarga;
-    public string _fileName = Path.Combine(FileSystem.AppDataDirectory, "CrhystelVelasco.txt");
+    IRecarga _recargaRepository;
+    public List<Recarga> recargaList;
+    //public string _fileName = Path.Combine(FileSystem.AppDataDirectory, "CrhystelVelasco.txt");
     public VelascoCRecarga()
 	{
 		InitializeComponent();
         recarga= new Recarga();
         BindingContext= recarga;
+        _recargaRepository= new RecargaRepository();
+       
 	}
 
   
@@ -36,10 +42,10 @@ public partial class VelascoCRecarga : ContentPage
     }
     private void CargarRecargas()
     {
-        // Obtener las recargas y mostrarlas
+        
         var recargas = _recargaRepository.DevuelveListRecarga();
 
-        // Crear un string con los datos de las recargas
+       
         var recargasTexto = string.Join("\n", recargas.Select(r => $"{r.Nombre} - {r.NumeroTelefono}"));
 
         crhysvelasco_label3.Text = recargasTexto;

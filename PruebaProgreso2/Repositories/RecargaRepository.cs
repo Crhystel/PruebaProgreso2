@@ -13,6 +13,7 @@ namespace PruebaProgreso2.Repositories
     public class RecargaRepository : IRecarga
     {
         public string _fileName = Path.Combine(FileSystem.AppDataDirectory, "CrhystelVelasco.txt");
+        
         public bool CrearRecarga(Recarga recarga)
         {
             try

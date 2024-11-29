@@ -1,18 +1,18 @@
-﻿namespace PruebaProgreso2
-{
-    public partial class MainPage : ContentPage
-    {
-        int count = 0;
+﻿//namespace PruebaProgreso2
+//{
+//    public partial class MainPage : ContentPage
+//    {
+//        int count = 0;
 
-        public MainPage()
-        {
-            InitializeComponent();
-        }
+//        public MainPage()
+//        {
+//            InitializeComponent();
+//        }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new VelascoCRecarga());
-        }
-    }
+//        private void OnCounterClicked(object sender, EventArgs e)
+//        {
+//            Navigation.PushAsync(new VelascoCRecarga());
+//        }
+//    }
 
-}
+//}

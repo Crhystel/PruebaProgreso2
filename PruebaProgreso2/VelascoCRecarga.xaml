@@ -32,10 +32,7 @@
             x:Name="Buton1"
             Text="Recargar"
             Clicked="Buton1_Clicked"/>
-        <Button
-            x:Name="Buton2"
-            Text="mover"
-            Clicked="Buton2_Clicked"/>
+       
     </VerticalStackLayout>
 </ContentPage>
 
