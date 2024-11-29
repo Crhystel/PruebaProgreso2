@@ -10,7 +10,7 @@ namespace PruebaProgreso2.Interfaces
     internal interface IRecarga
     {
         List<Recarga> DevuelveListRecarga();
-        Recarga DevuelveRecarg(int Nombre);
+        Recarga DevuelveRecarg(int Id);
         Boolean CrearRecarga(Recarga recarga);
     }
 }

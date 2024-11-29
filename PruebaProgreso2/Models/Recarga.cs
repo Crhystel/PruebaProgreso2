@@ -8,6 +8,7 @@ namespace PruebaProgreso2.Models
 {
     public class Recarga
     {
+        public int Id { get; set; }
         public string Nombre { get; set; }
         public string NumeroTelefono { get; set; }
         public string MensajeResultado { get; set; }
