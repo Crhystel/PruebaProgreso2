@@ -7,9 +7,20 @@
     Shell.FlyoutBehavior="Disabled"
     Title="PruebaProgreso2">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:VelascoCRecarga}"
-        Route="VelascoCRecarga" />
+    <TabBar>
+        <Tab Title="Recarga">
+            <ShellContent
+                Title="lo"
+                ContentTemplate="{DataTemplate local:VelascoCRecarga}"
+                Route="VelascoCRecarga"/>
+        </Tab>
+        <Tab Title="Grid">
+            <ShellContent
+                 Title="ww"
+                 ContentTemplate="{DataTemplate local:VelascoCGrid}"
+                 Route="VelascoCGrid"/>
+        </Tab>
+
+    </TabBar>
 
 </Shell>
