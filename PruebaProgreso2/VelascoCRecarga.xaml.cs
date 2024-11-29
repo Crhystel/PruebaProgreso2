@@ -39,6 +39,7 @@ public partial class VelascoCRecarga : ContentPage
             crhysvelasco_label3.Text = "Error al guardar la recarga.";
         }
 
+
     }
     private void CargarRecargas()
     {
