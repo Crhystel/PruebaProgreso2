@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PruebaProgreso2.VelascoCRecarga"
+             Title="VelascoCRecarga">
+    <VerticalStackLayout Margin="30"
+                         Spacing="30">
+        <Label 
+            x:Name="crhysvelasco_label1"
+            Text="Ingrese el número deteléfono:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry
+            Placeholder="Numero de telefono"/>
+        <Label 
+            x:Name="crhysvelasco_label2"
+            Text="Ingrese su nombre para la recarga:"/>
+        <Entry
+            Placeholder="vgvhg"/>
+        <Button
+            x:Name="Buton1"
+            Text="Recargar"
+            Clicked="Buton1_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
+
+
+
