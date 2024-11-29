@@ -11,16 +11,24 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Entry
+            x:Name="crysvelasco_entry1"
             Placeholder="Numero de telefono"/>
         <Label 
             x:Name="crhysvelasco_label2"
-            Text="Ingrese su nombre para la recarga:"/>
+            Text="Ingrese su nombre para la recarga:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
         <Entry
-            Placeholder="vgvhg"/>
+            x:Name="crysvelasco_entry2"
+            Placeholder="Ingrese su nombre"/>
         <Button
             x:Name="Buton1"
             Text="Recargar"
             Clicked="Buton1_Clicked"/>
+        <Button
+            x:Name="Buton2"
+            Text="mover"
+            Clicked="Buton2_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
 

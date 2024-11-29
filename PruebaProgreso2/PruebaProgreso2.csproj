@@ -63,6 +63,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="VelascoCGrid.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="VelascoCRecarga.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
