@@ -27,6 +27,7 @@
             x:Name="crhysvelasco_label3"
             Text="{Binding Mensaje}"
             />
+        
         <Button
             x:Name="Buton1"
             Text="Recargar"

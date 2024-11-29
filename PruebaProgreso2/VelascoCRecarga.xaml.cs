@@ -5,7 +5,7 @@ namespace PruebaProgreso2;
 public partial class VelascoCRecarga : ContentPage
 {
     public Recarga recarga;
-    public string FileName = "CrhystelVelasco.txt";
+    public string _fileName = Path.Combine(FileSystem.AppDataDirectory, "CrhystelVelasco.txt");
     public VelascoCRecarga()
 	{
 		InitializeComponent();
